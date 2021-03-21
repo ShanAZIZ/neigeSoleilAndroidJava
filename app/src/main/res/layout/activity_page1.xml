@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:scaleType="center"
+            android:src="@drawable/montagne" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votre avis sur notre service ? "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/idService"
+                android:layout_width="275dp"
+                android:layout_height="144dp">
+
+                <RadioButton
+                    android:id="@+id/idService1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Très satisfait"
+                    android:textAlignment="viewStart" />
+
+                <RadioButton
+                    android:id="@+id/idService2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Satisfait" />
+
+                <RadioButton
+                    android:id="@+id/idService3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peu Satisfait" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etes vous satisfait de votre séjour ? "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/idSejour"
+                android:layout_width="137dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/idSejour1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Très Satisfait" />
+
+                <RadioButton
+                    android:id="@+id/idSejour2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Satisfait" />
+
+                <RadioButton
+                    android:id="@+id/idSejour3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peu Satisfait" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idSuivant1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Suivant" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
